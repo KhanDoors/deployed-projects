@@ -6,7 +6,8 @@ const mongoose = require("mongoose");
 const app = express();
 
 mongoose.connect(
-  "mongodb://syyad:Cowboys1@ds031865.mlab.com:31865/deployedprojects"
+  "mongodb://syyad:Cowboys1@ds031865.mlab.com:31865/deployedprojects",
+  { useNewUrlParser: true }
 );
 mongoose.connection.once("open", () => {
   console.log("connected to DB");

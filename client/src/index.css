@@ -1,10 +1,10 @@
 body {
-  background: #626262;
+  background: #1b1e0f;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 #main h1 {
-  color: rgb(180, 43, 43);
+  color: #f50d28;
   text-align: center;
 }
 
@@ -24,14 +24,14 @@ body {
   margin: 12px;
   padding: 10px;
   border-radius: 4px;
-  border: 1px solid #880e4f;
+  border: 1px solid #fd0103;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  color: #880e4f;
+  color: #fd0103;
 }
 
 form {
-  background: #fff;
+  background: #1b1e0f;
   padding: 20px;
   position: fixed;
   left: 0;
@@ -48,6 +48,7 @@ form .field {
 form label {
   text-align: right;
   padding: 6px;
+  color: #fd0103;
 }
 
 form select,
@@ -60,7 +61,7 @@ form input {
 form button {
   color: #fff;
   font-size: 2em;
-  background: #ad1457;
+  background: #fd0103;
   border: 0;
   padding: 0 10px;
   border-radius: 50%;
@@ -76,10 +77,10 @@ form button {
   right: 0;
   width: 40%;
   height: 100%;
-  background: #ad1457;
+  background: #fd0103;
   padding: 30px;
   overflow: auto;
   box-shadow: -2px -3px 5px rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
-  color: #fff;
+  color: #1b1e0f;
 }

@@ -11,7 +11,7 @@ class BookDetails extends Component {
           <h2>{book.name}</h2>
           <p>{book.genre}</p>
           <p>{book.author.name}</p>
-          <p>Books by this Author:</p>
+          <p>Projects with this Tech:</p>
           <ul className="other-books">
             {book.author.books.map(item => {
               return <li key={item.id}>{item.name}</li>;
@@ -20,7 +20,7 @@ class BookDetails extends Component {
         </div>
       );
     } else {
-      return <div>No Book Selected</div>;
+      return <div>No Project Selected</div>;
     }
   }
   render() {

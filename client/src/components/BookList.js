@@ -12,7 +12,7 @@ class BookList extends Component {
   displayBooks() {
     let data = this.props.data;
     if (data.loading) {
-      return <div>Loading Books...</div>;
+      return <div>Loading Projects...</div>;
     } else {
       return data.books.map(book => {
         return (
@@ -31,7 +31,7 @@ class BookList extends Component {
   render() {
     return (
       <div>
-        <ul id="booklist">{this.displayBooks()}</ul>
+        <ul id="book-list">{this.displayBooks()}</ul>
         <BookDetails bookId={this.state.selected} />
       </div>
     );

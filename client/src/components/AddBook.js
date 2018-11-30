@@ -17,7 +17,7 @@ class AddBook extends Component {
     let data = this.props.getAuthorsQuery;
 
     if (data.loading) {
-      return <option disabled>Loading Authors...</option>;
+      return <option disabled>Loading Techs...</option>;
     } else {
       return data.authors.map(author => {
         return (
@@ -45,7 +45,7 @@ class AddBook extends Component {
     return (
       <form id="add-book" onSubmit={this.submitForm.bind(this)}>
         <div className="field">
-          <label>Book Name</label>
+          <label>Project Name</label>
           <input
             type="text"
             onChange={e => this.setState({ name: e.target.value })}
@@ -53,7 +53,7 @@ class AddBook extends Component {
         </div>
 
         <div className="field">
-          <label>Genre</label>
+          <label>Link</label>
           <input
             type="text"
             onChange={e => this.setState({ genre: e.target.value })}
@@ -61,9 +61,9 @@ class AddBook extends Component {
         </div>
 
         <div className="field">
-          <label>Author</label>
+          <label>Technology</label>
           <select onChange={e => this.setState({ authorId: e.target.value })}>
-            <option>Select Author</option>
+            <option>Select Tech</option>
             {this.displayAuthors()}
           </select>
         </div>

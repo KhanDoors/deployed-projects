@@ -8,10 +8,7 @@ const app = express();
 
 app.use(cors());
 
-mongoose.connect(
-  "mongodb://syyad:Cowboys1@ds031865.mlab.com:31865/deployedprojects",
-  { useNewUrlParser: true }
-);
+mongoose.connect("mlab/deployedprojects", { useNewUrlParser: true });
 mongoose.connection.once("open", () => {
   console.log("connected to DB");
 });
